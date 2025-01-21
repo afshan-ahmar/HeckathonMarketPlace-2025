@@ -3,6 +3,13 @@ import { sanityfetch } from "@/sanity/lib/fetch"
 import { sanityFetch } from "@/sanity/lib/live";
 import { allproducts } from "@/sanity/lib/queries";
 import { product } from "@/sanity/schemaTypes/product";
+import { Navbar } from "@/components/Navbar";
+import Hero from "@/components/hero-banner"
+import Features from "@/components/features-section"
+import News from "@/components/newsletter-section"
+import Hero2 from "@/components/hero-section"
+import Footer from "@/components/footer"
+
 
 type Product={
   _id:string;
@@ -16,9 +23,15 @@ export default async function Home() {
   
   return(
     <div>
-      <h1>
+          <Navbar/>
+    <Hero />
+    <Features/>
+    <Hero2/>
+    <News/>
+    <Footer/>
+
         Products
-      </h1>
+      
       <div className="grid grid-cols-3 gap-4">
 {
   products.map((product)=>(
