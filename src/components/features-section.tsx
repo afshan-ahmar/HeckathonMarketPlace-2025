@@ -1,4 +1,5 @@
-'use client'
+"use client"
+import React from 'react'
 import Image from 'next/image'
 import { useEffect, useState, useRef } from 'react'
 import { Truck, Medal, CreditCard, Recycle } from 'lucide-react'
