@@ -1,5 +1,5 @@
 'use client'
-
+import Image from 'next/image'
 import { useEffect, useState, useRef } from 'react'
 import { Truck, Medal, CreditCard, Recycle } from 'lucide-react'
 import { Button } from "@/components/ui/button"
@@ -67,9 +67,11 @@ export default function FeaturesSection() {
           >
             <Card className="border-0 shadow-none group hover:shadow-lg transition-shadow duration-300">
               <div className="aspect-square relative overflow-hidden mb-3">
-                <img
+                <Image
                   src={product.image}
                   alt={product.name}
+                  width={500}
+                  height={500}
                   className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
