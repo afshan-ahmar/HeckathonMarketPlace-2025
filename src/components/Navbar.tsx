@@ -105,7 +105,7 @@ export function Navbar() {
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">
                 <DropdownMenuItem>
-                  <Link href="/signin">Sign In</Link>
+                  <Link href="/signup">Sign Up</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
                   <Link href="/login">Login</Link>
