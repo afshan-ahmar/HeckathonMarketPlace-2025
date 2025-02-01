@@ -34,7 +34,7 @@ export default function FeaturesSection() {
       if (sectionRef.current) {
         observer.unobserve(sectionRef.current)
       }
-    }
+   }
   }, [])
 
   return (
