@@ -1,4 +1,6 @@
-import {Package} from '../shipengine_sanity_api/type'
+
+import {Package} from '@/../../type'
+
 interface Product extends Package {
   name: string
   
