@@ -1,4 +1,5 @@
-'use client'
+"use client"
+
 import Image from 'next/image'
 import { useEffect, useState, useRef } from 'react'
 import { Truck, Medal, CreditCard, Recycle } from 'lucide-react'
@@ -32,7 +33,7 @@ export default function FeaturesSection() {
       if (sectionRef.current) {
         observer.unobserve(sectionRef.current)
       }
-    }
+   }
   }, [])
 
   return (
